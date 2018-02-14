@@ -1,0 +1,710 @@
+/*
+*
+*    GLOBAL
+*
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+input[type="submit"],
+nav,
+.btn {
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgba(0, 114, 79, 1);
+    border-color: rgba(0, 114, 79, 1);
+    color: white;
+}
+.btn:focus{
+    box-shadow: none;
+}
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1030px;
+}
+
+input[type="submit"],
+.btn {
+    border: 2px white solid;
+    background-color: rgba(0, 114, 79, 1);
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+strong {
+    font-size: 3rem;
+}
+
+em {
+    font-weight: bold;
+}
+.invalid-feedback {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #e4606c;
+}
+/*
+*
+*    HEADER
+*
+*/
+
+.container.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 11rem;
+    height: 11rem;
+    position: relative;
+    top: 20px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.midHeader {
+    position: relative;
+    top: 20px;
+}
+
+.recherche {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 30px;
+}
+
+.recherche input {
+    width: 31rem;
+    border: 1.5px solid rgba(0, 114, 79, 1);
+    border-radius: 2rem;
+}
+
+.recherche .fa.fa-search {
+    margin-left: 0.5rem;
+    color: rgba(0, 114, 79, 1);
+    border: 1.5px solid rgba(0, 114, 79, 1);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.recherche .fa.fa-search:hover {
+    background-color: rgba(0, 114, 79, 1);
+    color: white;
+}
+
+nav {
+    font-weight: bold;
+
+}
+
+nav ul {
+    display: flex;
+    margin-top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 2rem 0 2rem;
+    color: #00724f;
+    font-size: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-bottom: 1px solid white;
+}
+
+nav a:hover,
+.active {
+    text-decoration: none;
+    background-color: rgba(0, 114, 79, 1);
+    color: white;
+}
+
+.co {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.co a {
+    font-size: 1.5rem;
+    margin: 17px 0 -5px 0;
+    background-color: rgba(0, 114, 79, 1);
+    color: white;
+    text-align: inherit;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.co a i {
+    font-size: 3rem;
+    position: absolute;
+    background-color: rgba(0, 114, 79, 1);
+    border-radius: 100%;
+}
+
+.co a:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-color: white;
+}
+
+.co .compte {
+    left: -33px;
+    background-color: white;
+    color: rgba(0, 114, 79, 1);
+    top: 13px;
+    border: 4px solid white;
+}
+
+.co .salon {
+    left: -25px;
+    background-color: white;
+    color: rgba(0, 114, 79, 1);
+    top: 56px;
+    border: 3px solid white;
+    width: 3rem;
+
+}
+
+.co.position {
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+/*
+*
+*    SECTION PRESENTATION
+*
+*/
+
+.container-fluid.presentation {
+    background: no-repeat center url(../images/background.jpg);
+    background-size: cover;
+}
+
+.container.presentation {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.partage {
+    transform: rotate(-20deg);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.partage h1 {
+
+    color: white;
+    font-size: 10rem;
+    text-shadow: 1px 2px #000000;
+}
+
+.partage a {
+    font-size: 3rem;
+    border: 2px white solid;
+    border-radius: 13px;
+    background-color: rgba(0, 114, 79, 1);
+    padding: 0.5rem 6rem 0.5rem 6rem;
+    margin-top: 2rem;
+}
+
+.right {
+    width: 20.6rem;
+    margin-top: 8rem;
+}
+
+.titre i {
+    font-size: 5rem;
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    width: 5rem;
+    background-color: black;
+    border-radius: 100%;
+    border: 1px solid white
+}
+
+.formulaire .titre i {
+    color: black;
+    background-color: white;
+    width: 5.3rem;
+}
+
+.formulaire,
+.trouverSalon,
+.appli,
+.enregistrez,.verifierSolde,.rechargerCarte,.seConnecter {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+
+}
+
+.formulaire h2,
+.trouverSalon h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+.formulaire label,
+.trouverSalon label {
+    font-size: 1.4rem;
+}
+
+.formulaire input,
+.trouverSalon input {
+    display: inline-block;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.formulaire .email,
+.formulaire .mdp {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.connexion {
+    margin-top: 2rem;
+}
+
+.ou {
+    margin: 2rem 0 2rem 0;
+}
+
+.ou hr {
+    border: 1px solid rgba(0, 114, 79, 1);
+    width: 40%;
+}
+
+.hrLeft {
+    float: left;
+}
+
+.hrRight {
+    float: right;
+}
+
+.creeCompte {
+    clear: both;
+    margin-bottom: 1.5rem;
+}
+
+.formulaire img {
+    width: 89%;
+}
+
+.formulaire p {
+    font-size: 1.2rem;
+    text-align: initial;
+}
+
+.formulaire p:first-of-type {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.trouverSalon {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+.map {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map iframe {
+    width: 89%;
+    border-radius: 10px;
+}
+
+.trouver {
+    margin-bottom: 1rem;
+}
+
+
+/*
+*
+* SECTION NOTRE CAFE
+*
+*/
+
+.notreCafe,
+.preparer {
+    color: white;
+}
+
+.container-fluid.cafe {
+    background: no-repeat center url(../images/cafe-top.jpg);
+    background-size: cover;
+}
+
+.introCafe {
+    padding-top: 10rem;
+    padding-left: 25rem;
+    width: 69%;
+    margin-bottom: 5rem;
+}
+
+.introCafe h1 {
+    font-size: 6.5rem;
+}
+
+.introCafe p:last-of-type {
+    font-weight: bold;
+}
+
+.btn-cafe {
+    background-color: rgba(0, 114, 79, 0);
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.btn-cafe:hover {
+    background-color: rgba(0, 114, 79, 1);
+    color: white;
+}
+
+.selection {
+    padding-bottom: 5rem;
+}
+
+.selection img {
+    margin-bottom: 3rem;
+}
+
+.selection .btn-cafe {
+    width: 22rem;
+}
+
+.selection .capsules img {
+    position: relative;
+    right: -40px;
+}
+
+.selection .grains::before {
+    content: "?";
+    font-size: 14rem;
+    color: rgba(221, 156, 135, 1);
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 27px;
+    right: -75px;
+}
+
+/*
+*
+*    SECTION PREPARER
+*
+*/
+
+.container-fluid.preparer {
+    background: url(../images/cafe-bot.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.commentPreparer {
+    padding-top: 14rem;
+}
+
+.commentPreparer h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.commentPreparer .texte {
+    width: 28%;
+}
+
+.icons {
+    margin-top: 16rem;
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.icons a {
+    margin: 0 2rem 0 2rem;
+}
+
+.icons .versage {
+    padding: 1.8rem 3rem;
+}
+
+.cafetiere::after,
+.versage::before,
+.versageGlace::before,
+.machine::before {
+    background-image: url(../images/cafe.png);
+    width: 59px;
+    content: " ";
+    position: absolute;
+    left: 61px;
+    bottom: 180px;
+    height: 93px;
+}
+
+.cafetiere::after {
+    background-position: 0 0;
+}
+
+.versage::before {
+    background-position: 415px 0;
+    left: 200px;
+    width: 81px;
+}
+
+.versageGlace::before {
+    left: 394px;
+    background-position: 226px 0;
+}
+
+.machine::before {
+    left: 548px;
+    background-position: 71px 0;
+    width: 70px;
+}
+
+
+/*
+*
+* SECTION CARTE
+*
+*/
+
+.container-fluid.carte {
+    background: url(../images/carte.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.maCarte {
+    padding-top: 25rem;
+    width: 49%;
+    float: right;
+    position: relative;
+    right: -50px;
+}
+
+.maCarte h1 {
+    font-size: 6.5rem;
+}
+
+.maCarte p {
+    margin-top: 3rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.maCarte strong {
+    font-size: 2rem;
+}
+
+.save {
+    clear: both;
+}
+
+.row.save {
+    padding: 13rem 0 5rem 0;
+}
+
+.enregistrez,
+.appli {
+    flex: 0 0 48.667%;
+    max-width: 48.667%;
+    text-align: initial;
+    padding: 3rem;
+}
+
+.enregistrez h2,
+.appli h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.enregistrez p,
+.appli p {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.enregistrez strong,
+.appli strong {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.enregistrez img {
+    margin: 5.5rem 0;
+}
+
+.enregistrez a {
+    margin-top: 3rem;
+    font-size: 3rem;
+    display: block;
+    border-radius: 10px;
+}
+
+.appli .mobile {
+    display: flex;
+    margin-top: -1rem;
+}
+
+.appli .mobile i {
+    font-size: 6rem;
+}
+
+.appli h2 {
+    padding: 1rem;
+}
+
+.iphoneAndroid {
+    margin-bottom: 2rem;
+}
+
+.iphoneAndroid i {
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(0, 114, 79, 1);
+    padding: 1rem;
+    border: 2px white solid;
+    border-radius: 20%;
+    margin-right: 5rem;
+
+}
+
+.iphoneAndroid i:hover {
+    border-color: rgba(0, 114, 79, 1);
+}
+
+.appli p a {
+    color: white;
+    font-weight: 600;
+}
+
+
+/*
+*
+* SECTION SOLDE
+*
+*/
+
+
+/*
+.container-fluid.solde{
+    border-top: 2px solid white;
+    background-color: rgba(0, 114, 79, 1);
+
+}
+*/
+
+
+/*
+*
+* FOOTER
+*
+*/
+
+footer {
+    border-top: 2px solid rgba(0, 114, 79, 1);
+}
+
+.container-fluid.footer {
+    background-color: black;
+}
+
+.container.footer {
+    display: flex;
+}
+
+.reseaux i {
+    color: #999999;
+    font-size: 4rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+.reseaux ul,
+.pages ul {
+    display: flex;
+}
+
+.reseaux a:hover i {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pages ul:first-of-type {
+    margin-top: 4.5rem;
+}
+
+.pages ul:first-of-type a {
+    font-size: 1.8rem;
+}
+
+.pages ul li a {
+    margin: 2rem;
+    color: rgba(0, 114, 79, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.pages ul:last-of-type li::after {
+    content: "|";
+    color: rgba(0, 114, 79, 1);
+}
+
+.copyright {
+    color: rgba(0, 114, 79, 1);
+}
+
+.copyright p {
+    font-size: 1rem;
+    position: relative;
+    left: 6rem;
+    font-weight: 300;
+}
